@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <title> Mean Stack</title>
+    <head> 
+        <link rel="stylesheet" href="lips/css/components.css">
+        <link rel="stylesheet" href="lips/css/icons.css">
+        <link rel="stylesheet" href="lips/css/responsee.css">
+        <script src="lips/Js/angular.js"></script>
+        <script src="controllers/mainController.js"></script>
+
+
+    </head>
+
+
+<body>
+ 
+
+
+<div ng-app="workshop" ng-controller="workshopController"> 
+  <div ng-controller="leftsideController" >
+
+    <!-- <div  ng-init = "countries = [
+    {locale:'en-US',name:'United States',school : 'sjk'},
+     {locale:'en-GB',name:'United Kingdom',school : 'cd'}, 
+     {locale:'en-FR',name:'France',school : 'sjo'}]"> 
+     
+         <p>Enter your Name: <input type = "text" ng-model = "name"></p>
+         <p>Hello <span ng-bind = "name"></span>!</p>
+         <p>List of Countries with locale:</p>
+      
+         <ol>
+            <li ng-repeat = "country in countries">
+               {{ 'Country: ' + country.name + ', Locale: ' + country.locale }}
+            </li>
+         </ol>
+    </div> -->
+
+     <!-- next topic expression -->
+
+         <!-- Enter first name: <input type = "text" ng-model = "student.fname"><br><br>
+         Enter last name: <input type = "text" ng-model = "student.lname"><br>
+         <br>
+         
+         You are entering: {{student.fullName()}} -->
+
+         <!-- topic no 4th -->
+
+          <!-- <table border = "0">
+            <tr>
+               <td>Enter first name:</td>
+               <td><input type = "text" ng-model = "student.firstName"></td>
+            </tr>
+            
+            <tr>
+               <td>Enter last name: </td>
+               <td><input type = "text" ng-model = "student.lastName"></td>
+            </tr>
+            
+            <tr>
+               <td>Enter fees: </td>
+               <td><input type = "text" ng-model = "student.fees "></td>
+            </tr>
+            
+            <tr>
+               <td>Enter subject: </td>
+               <td><input type = "text" ng-model = "subjectName"></td>
+            </tr>
+         </table>
+         <br/>
+         
+         <table border = "0">
+            <tr>
+               <td>Name in Upper Case: </td><td>{{student.fullName() | uppercase}}</td>
+            </tr>
+         
+            <tr>
+               <td>Name in Lower Case: </td><td>{{student.fullName() | uppercase}}</td>
+            </tr>
+         
+            <tr>
+               <td>fees: </td><td>{{student.fees | currency}}
+               </td>
+            </tr>
+				
+            <tr>
+               <td>Subject:</td>
+
+               <td>
+                  <ul>
+                     <li ng-repeat = "subject in student.subjects | filter: subjectName |orderBy:'marks'">
+                        {{ subject.name + ', marks:' + subject.marks }}
+                     </li>
+                  </ul>
+               </td>
+            </tr>
+         </table> -->
+
+
+         <!-- Tables topic 5 -->
+
+         <table border = "0">
+            <tr>
+               <td>Enter first name:</td>
+               <td><input type = "text" ng-model = "student.firstName"></td>
+            </tr>
+            
+            <tr>
+               <td>Enter last name: </td>
+               <td>
+                  <input type = "text" ng-model = "student.lastName">
+               </td>
+            </tr>
+            
+            <tr>
+               <td>Name: </td>
+               <td>{{student.fullName()}}</td>
+            </tr>
+            
+            <tr>
+               <td>Subject:</td>
+					
+               <td>
+                  <table>
+                     <tr>
+                        <th>Name</th>.
+                        <th>Marks</th>
+                     </tr>
+                     
+                     <tr ng-repeat = "subject in student.subjects">
+                        <td>{{ subject.name }}</td>
+                        <td>{{ subject.marks }}</td>
+                     </tr>
+							
+                  </table>
+               </td>
+					
+            </tr>
+         </table>
+      
+      
+
+</div>
+    
+       
+</div>
+
+</body>
+</html>
